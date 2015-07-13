@@ -1,0 +1,63 @@
+cn:
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"
+
+  layouts:
+    application:
+      title: "黑心书店"
+      home: "主页"
+      questions: "咨询"
+      news: "新鲜事"
+      contact: "联系我们"
+
+  store:
+    index:
+      title: "快来买啊！"
+      add_to_cart: "买我，买我！"
+
+  carts:
+    cart:
+      title: "大麻袋"
+      empty: "这些我都不要了"
+      checkout: "我买了"
+      confirm: "你真的不要了吗？"
+
+  orders:
+    new:
+      legend: "填一下你的信息"
+    form:
+      name: "你叫什么"
+      address: "你住哪儿"
+      email: "电子邮箱"
+      pay_type: "怎么付钱"
+      pay_prompt: "来选一种付款方式吧"
+      submit: "我买了"
+
+  activerecord:
+    models:
+      order: "订单"
+    attributes:
+      orders:
+        address: "地址"
+        name: "姓名"
+        email: "电子邮箱"
+        pay_type: "支付方式"
+    errors:
+      messages:
+        inclusion: "要在列表中选一个的"
+        blank: "不可以是空的"
+
+  errors:
+    template:
+      body: "发现了以下几个问题"
+      header:
+        one: "在保存%{model}时发现1个错误"
+        other: "在保存%{model}时发现%{count}个错误"
+
+  thanks: "谢谢惠顾!"

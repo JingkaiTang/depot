@@ -45,6 +45,8 @@ class CartsController < ApplicationController
   def update
     respond_to do |format|
       if @cart.update(cart_params)
+        nil.a
+
         format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
         format.json { render :show, status: :ok, location: @cart }
       else

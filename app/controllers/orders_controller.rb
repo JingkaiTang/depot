@@ -43,7 +43,7 @@ class OrdersController < ApplicationController
 
         OrderNotifier.received(@order).deliver_now
 
-        format.html { redirect_to store_url, notice: 'Thank you for your order.' }
+        format.html { redirect_to store_url, notice: I18n.t('.thanks') }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
